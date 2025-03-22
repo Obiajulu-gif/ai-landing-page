@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Models Tabs Component
 
-## Getting Started
+This project is a React/Next.js component that showcases various AI models in a tabbed interface. The component allows users to navigate through different AI categories using tabs, with smooth scrolling and responsive design for both desktop and mobile views.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Tabbed Navigation:** Users can switch between different AI models using tabs.
+- **Smooth Scrolling:** The component auto-scrolls to the selected tab.
+- **Responsive Design:** Optimized for both desktop and mobile views.
+- **Intersection Observer:** Automatically updates the active tab based on visibility.
+- **Arrow Navigation (Mobile):** Users can navigate using left/right buttons.
+- **Image Display:** Uses Next.js `Image` component for optimized loading.
+
+## Technologies Used
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Lucide Icons**
+- **Tailwind CSS**
+
+## Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/Obiajulu-gif/ai-landing-page
+   ```
+
+2. Navigate to the project directory:
+
+   ```sh
+   cd your-project
+   ```
+
+3. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```sh
+   npm run dev
+   ```
+
+## Usage
+
+Simply import and use the `AiModelsTabs` component in your Next.js page:
+
+```tsx
+import AiModelsTabs from "@/components/AiModelsTabs";
+
+export default function Home() {
+  return (
+    <div>
+      <AiModelsTabs />
+    </div>
+  );
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## File Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+/your-project
+ ├── /components
+ │   ├── AiModelsTabs.tsx
+ ├── /public/logos
+ │   ├── market-prediction.png
+ │   ├── finance.png
+ │   ├── data.png
+ │   ├── content.png
+ │   ├── customer.png
+ ├── /styles
+ │   ├── globals.css
+ ├── pages
+ │   ├── index.tsx
+ ├── package.json
+ ├── README.md
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Issues & Improvements
 
-## Learn More
+### Known Issues:
+- **Mobile Image Display Fix:** Ensured images maintain aspect ratio on all screen sizes.
+- **TypeScript Refinements:** Improved ref handling to prevent errors.
 
-To learn more about Next.js, take a look at the following resources:
+### Future Improvements:
+- Add animations when switching tabs.
+- Enhance accessibility with better keyboard navigation.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For any issues or suggestions, feel free to reach out!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
