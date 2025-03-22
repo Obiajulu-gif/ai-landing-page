@@ -112,7 +112,7 @@ export default function AiModelsTabs() {
 						<div
 							key={tab.id}
 							data-id={tab.id}
-							ref={(el) => (sectionRefs.current[tab.id] = el)}
+							ref={(el) => { sectionRefs.current[tab.id] = el; }}
 							className="min-w-full flex-shrink-0 flex items-center p-6 rounded-lg snap-center"
 							style={{ backgroundColor: "#f8fafc" }}
 						>
