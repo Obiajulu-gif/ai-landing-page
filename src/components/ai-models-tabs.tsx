@@ -12,12 +12,16 @@ const tabData = [
 		title:
 			"Use AI insights for smarter business decisions and stay competitive.",
 		image: "/logos/market-prediction.png",
+		description:
+			"Use AI insights for smarter business decisions and stay competitive.",
 	},
 	{
 		id: "finance",
 		label: "Finance",
 		title: "Our AI models analyze financial data for confident investments.",
 		image: "/logos/finance.png",
+		description:
+			"Our AI models analyze financial data for confident investments.",
 	},
 	{
 		id: "analytics",
@@ -25,6 +29,8 @@ const tabData = [
 		title:
 			"Transform data into insights with AI analytics that enhance decisions.",
 		image: "/logos/data.png",
+		description:
+			"Transform data into insights with AI analytics that enhance decisions.",
 	},
 	{
 		id: "content",
@@ -32,12 +38,16 @@ const tabData = [
 		title:
 			"Create quality content easily with AI that knows your brand and audience.",
 		image: "/logos/content.png",
+		description:
+			"Create quality content easily with AI that knows your brand and audience.",
 	},
 	{
 		id: "support",
 		label: "Customer Support",
 		title: "Use AI chatbots for instant, personalized customer support.",
 		image: "/logos/customer.png",
+		description:
+			"Use AI chatbots for instant, personalized customer support.",
 	},
 ];
 
