@@ -139,7 +139,7 @@ export default function AiModelsTabs() {
 	};
 
 	return (
-		<section className="py-10 px-4 bg-gray-50">
+		<section className="py-10 px-4 bg-white">
 			<div className="container mx-auto max-w-6xl">
 				<div className="text-center mb-6">
 					<h2 className="text-3xl font-bold mb-2">
@@ -235,7 +235,7 @@ export default function AiModelsTabs() {
 							}}
 							className="min-w-full flex-shrink-0 snap-center"
 						>
-							<div className="bg-white shadow-sm rounded-lg overflow-hidden">
+							<div className="bg-[#F6FAF3] shadow-sm rounded-lg overflow-hidden">
 								{/* Mobile View */}
 								<div className="md:hidden">
 									<div className="relative w-full h-48 bg-gray-100">
@@ -244,7 +244,7 @@ export default function AiModelsTabs() {
 											alt={`${tab.label} visualization`}
 											fill
 											className="object-cover"
-											sizes="(max-width: 768px) 100vw, 50vw"
+											sizes="100vw, 50vw"
 											priority={tab.id === "market"}
 										/>
 									</div>
@@ -258,7 +258,10 @@ export default function AiModelsTabs() {
 										<p className="text-sm text-gray-600 mb-4">
 											{tab.description}
 										</p>
-										<button className="w-full bg-[#0a1a35] text-white px-4 py-2 rounded-md hover:bg-[#0a1a35]/90 transition-colors text-sm">
+										<button
+											type="button"
+											className="w-full bg-[#0a1a35] text-white px-4 py-2 rounded-md hover:bg-[#0a1a35]/90 transition-colors text-sm"
+										>
 											Learn More
 										</button>
 									</div>
